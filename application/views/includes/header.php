@@ -1,6 +1,6 @@
 <header>
 	<div class="credentials clearfix">
-		<a id="logo" href="/">Графема</a>
+		<a id="logo" href="<=site_url()?>">Графема</a>
 		<nav class="clearfix">
 			<ul class="main-nav">
 			<?php if(uri_string() == ''):?>
