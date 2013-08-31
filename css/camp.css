@@ -1,0 +1,58 @@
+html, body { color: #444; background: #fff; }
+footer { background: #fff; }
+
+.container { width: 1000px; margin: 0 auto; }
+section.camp-header { margin: 60px 0 0; }
+	.camp-header .date { float: left; text-transform: uppercase; font-size: 30px; width: 10em; padding: 32px 0 0; }
+	.camp-header .camp-logo { float: left; }
+	.camp-header .register { float: right; width: 21em; text-transform: uppercase; font-size: 12px; padding-top: 19px; text-align: center; }
+	.camp-header .register a { display: inline-block; background: #444; color: #fff; text-decoration: none; padding: 6px 34px; font-size: 19px; margin: 8px 0 0; } 
+	
+section.illustration { height: 641px; background: url('../img/kostenko.jpg') center top no-repeat transparent; }
+	section.illustration .container { position: relative; }
+	.illustration .place { text-transform: uppercase; font-size: 1.75em; position: absolute; left: 0; text-align: left; top: 500px; }
+	.illustration .discount { text-transform: uppercase; font-size: 1.75em; position: absolute; right: 0; text-align: right; top: 500px; }
+section.axes { background: url('../img/kostenko-legs.jpg') center top no-repeat #1f1f25; height: 660px; margin-bottom: 1em; }
+section.camp-desc { padding: 4em 0 2.75em; }
+	section.camp-desc p { text-indent: 1.75em; }
+	p { max-width: 44em; margin: 1em auto; }
+	ul { list-style: none; padding: 0; margin: 0; }
+	ul li {  }
+.camp-sep { background: url('../img/camp-sep.png') center center no-repeat transparent; width: 300px; height: 7px; margin: 2.5em auto;  }
+
+.content-block { margin: 0 0 3.5em 0; } 
+.content-block figure { width: 160px; margin: 0 3em 0 0; float: left; }
+.content-block .camp-desc-item { width: 680px; float: left; }
+
+.camp-cost { background: #1f1f25; height: 340px; color: #fff; }
+.camp-registration .header, 
+.camp-cost .header { text-align: center; font-weight: 600; font-size: 33px; text-transform: uppercase; width: 460px; padding: 1.25em 0 1.5em; margin: 0 auto; background: url('../img/star.png') 15px 53px no-repeat transparent; }
+.camp-cost .cost-blocks { float: left; margin: 0 2em 0 0; }
+.camp-cost .cost-blocks .item { font-size: 1.5em; font-weight: 300; text-align: center; margin: 0 3em; float: left; }
+.camp-cost .cost-blocks .item strong { display: block; margin: 0.2em 0 0; font-size: 2em;}
+
+
+.camp-registration { padding: 2em 0 3.5em; }
+.camp-registration form { width: 30em; margin: 0 auto; }
+.camp-registration input[type=text] { border: 1px solid #c0c0c0; border-radius: 2px 2px 2px 2px; display: block; font-size: 0.9em; padding: 0.75em; width: 30em; margin: 0 0 0.75em; }
+.camp-registration input[type=checkbox] { position: relative; top: 1px; margin-right: 0.2em; }
+.camp-registration a.btn { display: block; width: 11em; text-align: center; text-decoration: none; background: #444; color: #fff; text-transform: uppercase; padding: 0.75em 1.25em; border: 1px solid #444; border-radius: 2px; font-size: 1em; font-family: 'futura-pt', sans-serif; margin: 2em auto; }
+.camp-registration .header { padding-bottom: 0.1em; }
+.camp-registration .header + p { margin-bottom: 3em; text-align: center; }
+.camp-registration p.aleft_ { text-align: left; }
+.camp-registration p { text-align: center; margin-bottom: 2em; }
+
+.camp-organizators { background: #1f1f25; height: 320px; color: #fff; }
+.camp-organizators .column { width: 300px; margin: 0 6.2em; float: left; }
+.camp-organizators .name-wrapper { margin: 1em 0 0; }
+.camp-organizators .name-wrapper .name { float: left; margin-right: 1.5em; height: 4em; width: 8em; }
+.camp-organizators .name-wrapper .contacts { float: left; }
+.camp-organizators .name-wrapper .contacts a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.25); line-height: 1.15em; display: inline-block; text-decoration: none; }
+.camp-organizators address { font-style: normal; margin: 3.65em 0 0; }
+
+h2 {  }
+h3 { text-transform: uppercase; font-weight: 500; font-size: 1.4em; margin: 1.6em 0 1.75em 0; }
+strong { font-weight: 500; text-transform: uppercase; }
+.step-2, .step-3 { display: none; }
+#order { color: #444; border-bottom: 1px dashed; display: inline-block; line-height: 1.2em; text-decoration: none; }
+#frm-payment { display: none; }
