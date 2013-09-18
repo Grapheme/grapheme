@@ -102,7 +102,7 @@ html, body {
 }
 
 html { overflow-x: hidden; }
-body { margin: 0; padding: 0; min-width: 960px; min-height: 400px;}
+body { margin: 0; padding: 0; /*min-width: 960px;*/ min-height: 400px; }
 
 header { position: fixed; width: 100%; top: 0; height: 50px; z-index: 10999; box-shadow: 0 10px 0 rgba(0,0,0,0.05); overflow: hidden; }
 article { margin-top: 50px; height: 100%; }
@@ -131,8 +131,8 @@ article.text { margin-top: 110px; }
 		.main-nav li.active a:hover { color: #1e1e1e; }
 
 .promo {
-	height: 100%;
-	min-height: 500px;
+	/*height: 100%;*/
+	min-height: /*500*/780px;
 	position: relative;
 	background: url('../img/promo.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -141,14 +141,14 @@ article.text { margin-top: 110px; }
   			background-size: cover; 
 }
 	.promo .promo-logo{ background: url('../img/logo.png') no-repeat; width: 262px; height: 82px; margin: 0 auto; position: absolute; top: 9em; right: 0; left: 0; }
-	.promo .scroll { margin: 0 auto; /*background: url('../img/scroll-down.png') no-repeat; height: 53px;*/ width: 53px; display: block; position: absolute; bottom: 6.5em; right: 0; left: 0; }
+	.promo .scroll { margin: 0 auto; /*background: url('../img/scroll-down.png') no-repeat; height: 53px;*/ width: 53px; display: block; position: absolute; bottom: 5%; right: 0; left: 0; }
 	.promo video { top: 0; left: 0; position: absolute; }
 	.promo .overlay { opacity: 0.65; background: #222; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
-	.promo .text { text-align: center; width: 70em; position: absolute; color: #fff; margin: 14em auto; right: 0; left: 0; bottom: 0; top: 0; text-shadow: 1px 1px 3px #000; } 
+	.promo .text { text-align: center; width: 70em; position: absolute; color: #fff; margin: 0 auto 14em; padding: 15% 0 0; right: 0; left: 0; bottom: 0; top: 0; text-shadow: 1px 1px 3px #000; } 
 	.promo h1 { opacity: 0; font-size: 45px; text-transform: uppercase; letter-spacing: -1px; margin: 0; padding: 0; 
-	-webkit-transform: translate3d( 0px, -200px, 0px );
-	-ms-transform: translate( 0px, -200px );
-	transform: translate( 0px, -200px );
+	-webkit-transform: translate3d( 0px, -400px, 0px );
+	-ms-transform: translate( 0px, -400px );
+	transform: translate( 0px, -400px );
 	transition: all .8s ease;
 	-webkit-transition: all .8s ease;
 	-moz-transition: all .8s ease;
@@ -156,9 +156,9 @@ article.text { margin-top: 110px; }
 	-ms-transition: all .8s ease;
 	}
 	.promo .company-desc { opacity: 0; font-family: 'ff-meta-web-pro', sans-serif; font-size: 1.1em; width: 70%; margin: 0 auto; 
-	-webkit-transform: translate3d(0px, 200px, 0px); 
-	-ms-transform: translate(0px, 200px); 
-	transform: translate(0px, 200px);
+	-webkit-transform: translate3d(0px, 400px, 0px); 
+	-ms-transform: translate(0px, 400px); 
+	transform: translate(0px, 400px);
 	transition: all .8s ease;
 	-webkit-transition: all .8s ease;
 	-moz-transition: all .8s ease;
@@ -203,8 +203,36 @@ footer { position: fixed; width: 100%; bottom: 0; height: 40px; z-index: 101; ba
 
 img { max-width: 100%; }
 
-
-
+/* ==========================================================================
+ * Media queries section
+   ========================================================================== */
+@media screen and (max-width: 1120px) {
+	.promo { min-height: 525px; }		
+	.promo h1 { font-size: 35px; }
+	.promo .sep { margin: 35px auto 45px; }
+	.promo .company-desc { font-size: 1em; }	
+	.promo .scroll { bottom: 1.5em; }
+}
+@media screen and (max-width: 1024px) {
+    .promo .text { width: auto; }
+}
+@media screen and (max-width: 940px) {
+    .promo h1 { font-size: 28px; }
+	.promo .company-desc { font-size: .8em; }
+}
+@media screen and (max-width: 655px) {
+	.promo h1 { font-size: 22px; }
+}
+@media screen and (max-width: 555px) {
+	#v { position: fixed; }
+	.portfolio { padding: 0 0 40px; }
+}
+@media screen and (max-width: 480px) {
+    .promo h1 { font-size: 18px; }    
+}
+@media screen and (max-width: 320px) {
+    
+}
 
 /* ==========================================================================
    Helper classes
