@@ -15,15 +15,16 @@
 	<?=$this->load->view('includes/header');?>
 	<article>
 		<section class="promo">
-			<video id="v" autoplay loop preload="auto" webkit-playsinline>
+			<!--<video id="v" autoplay loop preload="auto" webkit-playsinline>
 					<source src="<?=base_url('video/loop1.mp4');?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
 					<source src="<?=base_url('video/loop1.webm');?>" type='video/webm; codecs="vp8, vorbis"' />
 					<source src="<?=base_url('video/loop1.ogv');?>" type='video/ogg; codecs="theora, vorbis"' />
-			</video>
+			</video>-->
+			<div class="graphemescope" style="height: 100%;" ></div>
 			<div class="overlay"> </div>
 			<!--<div class="promo-logo"> </div>-->
 			<div class="text">
-				<h1>Графема - интерактивное рекламное агентство <br/>с аналитическим мышлением</h1>
+				<h1>Графема — интерактивное рекламное агентство <br/>с аналитическим мышлением</h1>
 				<div class="sep"> </div>
 				<div class="company-desc">
 					Мы работаем с комплексными интерактивными проектами. Занимаемся проектированием и 
@@ -91,8 +92,52 @@
 	<?=$this->load->view('includes/footer');?>
 	<?=$this->load->view('includes/facebook');?>
 	<?=$this->load->view('includes/scripts');?>
+	<script src="<?=base_url('js/libs/graphemescope.js');?>"></script>
+	<script>
+			/*$(function() {
+			  	var imagePath = "http://media-cache-ak0.pinimg.com/736x/4a/77/ab/4a77aba8f172f67c5b34ca672f2f17a2.jpg";
+			    var musicPath = "https://www.dropbox.com/s/b9sob4lotzq8dru/b11cb80e95acfe.mp3?dl=1";
+			
+			  	var container = $(".graphemescope");
+			
+			    var scope = new Graphemescope(container[0], imagePath, musicPath);
+			});*/
+			$(function() {
+				var imagePath = "http://media-cache-ak0.pinimg.com/736x/4a/77/ab/4a77aba8f172f67c5b34ca672f2f17a2.jpg";
+			
+				var container = $(".graphemescope");
+			    var dragContainer = $(".promo");
+				var kaleidoscope = new Kaleidoscope( container[0] );
+			
+			    // Init Drag'n'Drop 
+			    var dragdrop = new DragDrop(dragContainer[0], /^image/i, function (result) {
+			    	var img = new Image();
+			        img.src = result;
+			        kaleidoscope.image = img;
+			    });
+			       
+			    setInterval(function() {
+			    	kaleidoscope.draw();
+			    }, 1000 / 30);
+			
+			    var image = new Image();
+			    image.src = imagePath;
+			    image.onload = function() {
+			        kaleidoscope.image = image;
+			    };
+			
+			    $(window).mousemove(function(event) {
+					var factorx = event.pageX / $(window).width();
+					var factory = event.pageY / $(window).height();
+			
+					kaleidoscope.angleTarget = factorx;
+					kaleidoscope.zoomTarget  = 1.0 + 1.5 * factory;
+			    });
+			
+			});
+	</script>
 	<script type="text/javascript">
-		var grapheme = grapheme || {};
+		/*var grapheme = grapheme || {};
 			grapheme.video = document.getElementById("v");
 			grapheme.percentLoaded = 0,
 			grapheme.percentLoadedOld = 0;
@@ -116,7 +161,7 @@
 				if ( grapheme.percentLoaded == 100 ) { clearInterval(t); }
 				grapheme.percentLoadedOld = grapheme.percentLoaded;
 			}, 1000);
-		});
+		});*/
 	</script>
 	<?=$this->load->view('includes/metrika');?>
 	<?=$this->load->view('includes/analytics');?>
