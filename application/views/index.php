@@ -15,12 +15,7 @@
 	<?=$this->load->view('includes/header');?>
 	<article>
 		<section class="promo">
-			<!--<video id="v" autoplay loop preload="auto" webkit-playsinline>
-					<source src="<?=base_url('video/loop1.mp4');?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-					<source src="<?=base_url('video/loop1.webm');?>" type='video/webm; codecs="vp8, vorbis"' />
-					<source src="<?=base_url('video/loop1.ogv');?>" type='video/ogg; codecs="theora, vorbis"' />
-			</video>-->
-			<div class="graphemescope" style="height: 100%;" ></div>
+			<div class="graphemescope" ></div>
 			<div class="overlay"> </div>
 			<!--<div class="promo-logo"> </div>-->
 			<div class="text">
@@ -135,34 +130,7 @@
 			    });
 			
 			});
-	</script>
-	<script type="text/javascript">
-		/*var grapheme = grapheme || {};
-			grapheme.video = document.getElementById("v");
-			grapheme.percentLoaded = 0,
-			grapheme.percentLoadedOld = 0;
-		function updateLoadingStatus(){
-			try{
-				grapheme.percentLoaded = parseInt(((grapheme.video.buffered.end(0) / grapheme.video.duration) * 100));
-			}catch(err){}
-		}
-		function playVideo(){grapheme.video.play();}
-		$(function(){
-			$('a.scroll, #menu-item-portfolio').click(function(){
-				$('html, body').animate({scrollTop: $(".portfolio").offset().top},1000);
-			});
-			$('a.disabled').click(function(e){e.preventDefault();});
-			grapheme.video.addEventListener('progress', updateLoadingStatus, false);
-			grapheme.video.addEventListener('canplaythrough', playVideo, false);
-			playVideo();
-			var t = setInterval(function(){
-				if ( grapheme.percentLoaded == grapheme.percentLoadedOld ) { playVideo(); }
-				if ( grapheme.percentLoaded > 0 ) { $('#v').maximage('maxcover'); }
-				if ( grapheme.percentLoaded == 100 ) { clearInterval(t); }
-				grapheme.percentLoadedOld = grapheme.percentLoaded;
-			}, 1000);
-		});*/
-	</script>
+	</script>	
 	<?=$this->load->view('includes/metrika');?>
 	<?=$this->load->view('includes/analytics');?>
 </body>
