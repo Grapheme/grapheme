@@ -24,3 +24,12 @@ $(".scroll").click(function() {
         scrollTop: $(".portfolio").offset().top
     }, 2000);
 });
+$('.morelink').click( function(){
+	$('header').slideToggle( 800 );
+	if ( $(this).hasClass('morelink-active') ) {
+		$(this).removeClass('morelink-active');
+	}
+	else {
+		$(this).addClass('morelink-active');
+	}
+});

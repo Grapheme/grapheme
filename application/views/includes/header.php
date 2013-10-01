@@ -1,7 +1,7 @@
 <header>
 	<div class="credentials clearfix">
 		<a id="logo" href="<?=site_url()?>">Графема</a>
-		<nav class="clearfix">
+		<nav class="clearfix">			
 			<ul class="main-nav">
 			<?php if(uri_string() == ''):?>
 				<li><a onclick="yaCounter8036941.reachGoal('works'); return true;" id="menu-item-portfolio" href="#">Работы</a></li>
