@@ -101,7 +101,7 @@ html, body {
 	height: 100%;
 }
 
-html { overflow-x: hidden; }
+html { overflow-x: hidden; min-width: 300px; }
 body { margin: 0; padding: 0; /*min-width: 960px;*/ min-height: 400px; }
 
 .graphemescope { height: 100%; }
@@ -253,13 +253,25 @@ img { max-width: 100%; }
 @media screen and (max-width: 940px) {
     .promo h1 { font-size: 28px; }
 	.promo .company-desc { font-size: .8em; }
+	.portfolio { padding: 0 0 40px; }
 }
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 665px) {
 	.promo h1 { font-size: 22px; }
 	.promo .text { padding: 10% 1em 0; }
+	article { height: auto; }
+	footer { position: static; height: auto; text-align: center; }
+	footer address { float: none; margin: 0 auto; text-align: center; }
+	footer .social { float: none; display: inline-block; margin: 0; line-height: 1em; }
+	.portfolio { padding: 0; }
 }
-@media screen and (max-width: 555px) {	
-	.portfolio { padding: 0 0 40px; }
+@media screen and (max-width: 480px) {
+	article { height: auto; }
+	footer { position: static; height: auto; text-align: center; }
+	footer address { float: none; margin: 0 auto; padding: 1.5em 0; text-align: center; font-size: 10px; line-height: 1.2em;  }
+	footer .social { float: none; display: inline-block; margin: 0; line-height: 1em; }
+	.portfolio { padding: 0; }		
+	footer .social .hashtag { font-size: 10px; line-height: 3em; }
+	.scroll img { display: none; }
 }
 @media screen and (max-width: 448px) {
 	.credentials a.mailto { margin: 0 25px 0 0; padding: 0 0 0 5.1em; }	
