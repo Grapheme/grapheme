@@ -106,8 +106,7 @@ body { margin: 0; padding: 0; /*min-width: 960px;*/ min-height: 400px; }
 
 .graphemescope { height: 100%; }
 .graphemescope canvas{ height: 100% !important; }
-.morelink { display: none; position: absolute; top: 0; left: 0; width: 38px; height: 32px; background: url(../img/mobile-menu.png) no-repeat; cursor: pointer; z-index: 11111; }
-.morelink-active { background-image: url(../img/mobile-menu-active.png); }
+.morelink { display: none; position: absolute; top: 0; left: 0; width: 38px; height: 32px; background: url(../img/mobile-menu-active.png) no-repeat; cursor: pointer; z-index: 11111; }
 .morelink:hover { opacity: .7; }
 
 header { position: fixed; width: 100%; top: 0; height: 50px; z-index: 10999; box-shadow: 0 10px 0 rgba(0,0,0,0.05); overflow: hidden; }
@@ -226,9 +225,11 @@ img { max-width: 100%; }
     .promo .text { padding: 10% 0 0; }
     .promo .sep { margin: 30px auto 40px; }
 }
+@media screen and (max-width: 1200px) {	
+    .promo h1 { font-size: 35px; } 
+}
 @media screen and (max-width: 1120px) {
-    .promo { min-height: 525px; }		
-    .promo h1 { font-size: 35px; }    
+    .promo { min-height: 525px; }	 
     .promo .company-desc { font-size: 1em; }	
     .promo .scroll { bottom: 1.5em; }
 }
@@ -236,9 +237,10 @@ img { max-width: 100%; }
     .promo .text { width: auto; }
 }
 @media screen and (max-width: 1003px) {
-	.morelink { display: block; }
-    .promo h1 { font-size: 18px; } 
-    header { display: none; position: relative; height: auto; background: #fff;}   
+	.morelink { position: absolute; top: 8px; left: 8px; display: block; }
+    .promo h1 { font-size: 28px; } 
+    header { position: relative; height: auto; background: #fff; }  
+    nav, .phone, .mailto { display: none; }
     .main-nav { float: none; margin: 0 0 1em; }
     .main-nav li { float: none; } 
     .credentials #logo { float: none; margin: 0; text-align: center; }
@@ -254,25 +256,13 @@ img { max-width: 100%; }
 }
 @media screen and (max-width: 655px) {
 	.promo h1 { font-size: 22px; }
+	.promo .text { padding: 10% 1em 0; }
 }
 @media screen and (max-width: 555px) {	
 	.portfolio { padding: 0 0 40px; }
 }
-@media screen and (max-width: 480px) {
-	.morelink { display: block; }
-    .promo h1 { font-size: 18px; } 
-    header { display: none; position: relative; height: auto; background: #fff;}   
-    .main-nav { float: none; margin: 0 0 1em; }
-    .main-nav li { float: none; } 
-    .credentials #logo { float: none; margin: 0; text-align: center; }
-    .credentials .social-links { position: absolute; top: 0; right: 0; float: none; margin: 0; }
-    .credentials a.phone { margin: 0 1.5em 0 0; }
-    .credentials a.mailto { margin: 0 44px 0 0; }
-    .promo .text { padding: 20% 0 0; }
-    article { margin: 0; }
-}
 @media screen and (max-width: 448px) {
-	.credentials a.mailto { margin: 0 25px 0 0; padding: 0 0 0 5.1em; }
+	.credentials a.mailto { margin: 0 25px 0 0; padding: 0 0 0 5.1em; }	
 }
 @media screen and (max-width: 320px) {
     .credentials a.mailto { padding: 0; }
