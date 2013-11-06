@@ -48,7 +48,7 @@
 					<div class="overlay"> </div>
 					<img src="img/f3-rivendoors.jpg" alt="Сайт для Магазина дверей и декора Riven Doors" />
 				</a>
-				<a href="http://dev.grapheme.ru/conferum/" target="_blank" class="frame3">
+				<a href="http://conferum.ru" target="_blank" class="frame3">
 					<div class="overlay"> </div>
 					<img src="img/f3-conferum.jpg" alt="Сайт для компании по производству химических средств очистки" />
 				</a>
