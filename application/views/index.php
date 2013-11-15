@@ -36,6 +36,16 @@
 		</section>
 		<section class="portfolio clearfix">
 			<div class="clearfix">
+			<a href="http://qoobroom.ru" target="_blank" class="frame2">
+					<div class="overlay"> </div>
+					<img src="img/f2-qoobroom.jpg" alt="Сайт для компании, занимающейся вертикальным озеленением и зелеными стенами" />
+				</a>
+				<a href="http://optospot.net" target="_blank" class="frame2">
+					<div class="overlay"> </div>
+					<img src="img/f2-optospot.jpg" alt="Сайт для брокера бинарных опционов" />
+				</a>
+			</div>	
+			<div class="clearfix">				
 				<a href="http://solnechny-club.ru" target="_blank" class="frame1">
 					<div class="overlay"> </div>
 					<img src="img/f1-sunday.jpg" alt="Сайт для Загородного клуба Солнечный" />
@@ -52,7 +62,7 @@
 					<div class="overlay"> </div>
 					<img src="img/f3-conferum.jpg" alt="Сайт для компании по производству химических средств очистки" />
 				</a>
-				<a href="#" class="frame2">
+				<a href="http://ptosnm.ru" class="frame2">
 					<div class="overlay"> </div>
 					<img src="img/f2-journal.jpg" alt="Сайт для Мебельного салона Электронного журнала по физике" />
 				</a>
